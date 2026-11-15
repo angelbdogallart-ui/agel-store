@@ -432,7 +432,7 @@ function processOrder() {
   }).join(', ');
 
   if (selectedPay === 'paypal') {
-    const ppUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=oliverogallart%40hotmail.com&item_name=AgEl+Tech+-+${encodeURIComponent(orderItems)}&amount=${(total+shipping).toFixed(2)}&currency_code=USD&return=https://angelbdogallart-ui.github.io/agel-store/&cancel_return=https://angelbdogallart-ui.github.io/agel-store/`;
+    const ppUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=angelgallart%40hotmail.com&item_name=AgEl+Tech+-+${encodeURIComponent(orderItems)}&amount=${(total+shipping).toFixed(2)}&currency_code=USD&return=https://angelbdogallart-ui.github.io/agel-store/&cancel_return=https://angelbdogallart-ui.github.io/agel-store/`;
     showOrderSuccess();
     setTimeout(() => window.open(ppUrl, '_blank'), 500);
   } else {
