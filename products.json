@@ -4,143 +4,155 @@
     "name": "Auriculares Bluetooth TWS Pro",
     "description": "Auriculares inalámbricos con cancelación de ruido, estuche de carga, 30h batería. Compatible iOS/Android.",
     "price": 29.99,
-    "cost": 6.50,
     "category": "audio",
     "icon": "🎧",
     "color": "#1a3a2a",
     "badge": "Popular",
-    "specs": ["Bluetooth 5.3", "ANC", "30h batería", "IPX5"]
+    "specs": ["Bluetooth 5.3", "ANC", "30h batería", "IPX5"],
+    "amazon_asin": "B0D1XD1ZV3",
+    "amazon_search": "wireless+earbuds+noise+cancelling"
   },
   {
     "id": 2,
     "name": "Smartwatch Deportivo S9",
     "description": "Reloj inteligente con monitor cardíaco, GPS, 100+ modos deportivos. Pantalla AMOLED 1.9\".",
     "price": 49.99,
-    "cost": 12.00,
     "category": "wearables",
     "icon": "⌚",
     "color": "#1a1a3a",
     "badge": "Nuevo",
-    "specs": ["AMOLED 1.9\"", "GPS", "IP68", "7 días batería"]
+    "specs": ["AMOLED 1.9\"", "GPS", "IP68", "7 días batería"],
+    "amazon_asin": "B0DKHPBP2P",
+    "amazon_search": "smartwatch+sport+amoled"
   },
   {
     "id": 3,
     "name": "Cargador Inalámbrico 3 en 1",
     "description": "Estación de carga para teléfono, reloj y auriculares. Carga rápida 15W Qi.",
     "price": 34.99,
-    "cost": 8.00,
     "category": "cargadores",
     "icon": "🔌",
     "color": "#2a1a1a",
     "badge": "",
-    "specs": ["15W Qi", "3 en 1", "LED indicador", "Anti-deslizante"]
+    "specs": ["15W Qi", "3 en 1", "LED indicador", "Anti-deslizante"],
+    "amazon_asin": "B0BXM3GBP7",
+    "amazon_search": "3+in+1+wireless+charger+station"
   },
   {
     "id": 4,
     "name": "Hub USB-C 8 en 1",
     "description": "Hub multipuerto: HDMI 4K, USB 3.0 x3, SD/TF, PD 100W, Ethernet. Para MacBook/PC.",
     "price": 39.99,
-    "cost": 9.50,
     "category": "accesorios",
     "icon": "🔗",
     "color": "#1a2a3a",
     "badge": "Top Ventas",
-    "specs": ["HDMI 4K", "PD 100W", "USB 3.0 x3", "Ethernet"]
+    "specs": ["HDMI 4K", "PD 100W", "USB 3.0 x3", "Ethernet"],
+    "amazon_asin": "B07WPTG7NX",
+    "amazon_search": "usb+c+hub+8+in+1+hdmi"
   },
   {
     "id": 5,
     "name": "Lámpara LED Monitor RGB",
     "description": "Barra de luz para monitor con control táctil, 3 modos de color, sin reflejos en pantalla.",
     "price": 24.99,
-    "cost": 5.50,
     "category": "accesorios",
     "icon": "💡",
     "color": "#2a2a1a",
     "badge": "",
-    "specs": ["RGB", "Control táctil", "USB", "Anti-reflejo"]
+    "specs": ["RGB", "Control táctil", "USB", "Anti-reflejo"],
+    "amazon_asin": "B08W2C5W59",
+    "amazon_search": "monitor+light+bar+rgb"
   },
   {
     "id": 6,
     "name": "Power Bank 20000mAh Solar",
     "description": "Batería externa solar con carga rápida PD 22.5W, 3 puertos, linterna LED integrada.",
     "price": 32.99,
-    "cost": 7.00,
     "category": "cargadores",
     "icon": "🔋",
     "color": "#1a3a1a",
     "badge": "Oferta",
-    "specs": ["20000mAh", "Solar", "PD 22.5W", "3 puertos"]
+    "specs": ["20000mAh", "Solar", "PD 22.5W", "3 puertos"],
+    "amazon_asin": "B0CDQ4RPYM",
+    "amazon_search": "solar+power+bank+20000mah"
   },
   {
     "id": 7,
     "name": "Teclado Mecánico Wireless 60%",
     "description": "Teclado compacto RGB con switches mecánicos, Bluetooth + 2.4G + USB-C. Hot-swappable.",
     "price": 44.99,
-    "cost": 11.00,
     "category": "perifericos",
     "icon": "⌨️",
     "color": "#2a1a2a",
     "badge": "",
-    "specs": ["Mecánico", "RGB", "Tri-mode", "Hot-swap"]
+    "specs": ["Mecánico", "RGB", "Tri-mode", "Hot-swap"],
+    "amazon_asin": "B0B2864YQT",
+    "amazon_search": "mechanical+keyboard+wireless+60+percent"
   },
   {
     "id": 8,
     "name": "Webcam 4K AutoFocus",
     "description": "Cámara web 4K con micrófono dual, autoenfoque, corrección de luz. Para streaming y videollamadas.",
     "price": 42.99,
-    "cost": 10.00,
     "category": "perifericos",
     "icon": "📷",
     "color": "#1a2a2a",
     "badge": "",
-    "specs": ["4K 30fps", "AutoFocus", "Mic dual", "Plug & Play"]
+    "specs": ["4K 30fps", "AutoFocus", "Mic dual", "Plug & Play"],
+    "amazon_asin": "B0BZQMM5GN",
+    "amazon_search": "webcam+4k+autofocus"
   },
   {
     "id": 9,
     "name": "Soporte Laptop Ajustable Aluminio",
     "description": "Soporte ergonómico de aluminio para laptop 10-17\". Plegable, ventilado, antideslizante.",
     "price": 27.99,
-    "cost": 5.00,
     "category": "accesorios",
     "icon": "💻",
     "color": "#2a2a2a",
     "badge": "",
-    "specs": ["Aluminio", "10-17\"", "Plegable", "Ergonómico"]
+    "specs": ["Aluminio", "10-17\"", "Plegable", "Ergonómico"],
+    "amazon_asin": "B0CX7B4FBQ",
+    "amazon_search": "laptop+stand+aluminum+adjustable"
   },
   {
     "id": 10,
     "name": "Mini Proyector LED Portátil",
     "description": "Proyector 1080P nativo con WiFi y Bluetooth. 200\" pantalla, altavoz integrado, HDMI/USB.",
     "price": 89.99,
-    "cost": 28.00,
     "category": "video",
     "icon": "📽️",
     "color": "#1a1a2a",
     "badge": "Premium",
-    "specs": ["1080P", "WiFi+BT", "200\"", "Altavoz"]
+    "specs": ["1080P", "WiFi+BT", "200\"", "Altavoz"],
+    "amazon_asin": "B0D7M2M6VK",
+    "amazon_search": "mini+projector+1080p+wifi+bluetooth"
   },
   {
     "id": 11,
     "name": "Funda MagSafe Transparente",
     "description": "Funda magnética transparente anti-amarillamiento. Compatible con carga MagSafe y accesorios.",
     "price": 14.99,
-    "cost": 2.00,
     "category": "fundas",
     "icon": "📱",
     "color": "#2a1a3a",
     "badge": "",
-    "specs": ["MagSafe", "Anti-amarillo", "Militar", "Transparente"]
+    "specs": ["MagSafe", "Anti-amarillo", "Militar", "Transparente"],
+    "amazon_asin": "B09JFNMQVZ",
+    "amazon_search": "magsafe+clear+case+iphone"
   },
   {
     "id": 12,
     "name": "Mouse Gaming Wireless RGB",
     "description": "Mouse inalámbrico 2.4G con sensor 12800 DPI, 7 botones programables, RGB, recargable.",
     "price": 22.99,
-    "cost": 4.50,
     "category": "perifericos",
     "icon": "🖱️",
     "color": "#3a1a1a",
     "badge": "",
-    "specs": ["12800 DPI", "RGB", "Wireless", "Recargable"]
+    "specs": ["12800 DPI", "RGB", "Wireless", "Recargable"],
+    "amazon_asin": "B098RJVJNQ",
+    "amazon_search": "gaming+mouse+wireless+rgb"
   }
 ]

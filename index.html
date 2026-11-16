@@ -58,6 +58,11 @@ nav{position:sticky;top:0;z-index:100;background:rgba(10,10,10,.92);backdrop-fil
 .add-btn{background:var(--accent);color:#000;border:none;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.85rem;cursor:pointer;transition:background .2s}
 .add-btn:hover{background:var(--accent2)}
 .add-btn.added{background:#333;color:var(--accent)}
+.amazon-btn{background:#FF9900;color:#000;border:none;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.85rem;cursor:pointer;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
+.amazon-btn:hover{background:#e88a00}
+.shopify-btn{background:#96BF48;color:#000;border:none;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.85rem;cursor:pointer;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
+.shopify-btn:hover{background:#7ea63d}
+.buy-buttons{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 
 /* CART DRAWER */
 .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;opacity:0;pointer-events:none;transition:opacity .3s}
@@ -217,6 +222,14 @@ let products = [];
 let cart = JSON.parse(localStorage.getItem('agel_cart') || '[]');
 let currentCategory = 'all';
 
+const AMAZON_TAG = 'ageltech-20';
+const SHOPIFY_STORE = 'ageltech.myshopify.com';
+function amazonLink(p) {
+  if (p.amazon_asin) return `https://www.amazon.com/dp/${p.amazon_asin}?tag=${AMAZON_TAG}`;
+  if (p.amazon_search) return `https://www.amazon.com/s?k=${p.amazon_search}&tag=${AMAZON_TAG}`;
+  return `https://www.amazon.com/s?k=${encodeURIComponent(p.name)}&tag=${AMAZON_TAG}`;
+}
+
 fetch('products.json').then(r => r.json()).then(data => {
   products = data;
   renderProducts();
@@ -256,6 +269,10 @@ function renderProducts(search = '') {
         <div class="product-footer">
           <span class="product-price">$${p.price.toFixed(2)}</span>
           <button class="add-btn" onclick="event.stopPropagation();addToCart(${p.id})">Agregar</button>
+        </div>
+        <div class="buy-buttons">
+          <a class="amazon-btn" href="${amazonLink(p)}" target="_blank" onclick="event.stopPropagation()">Amazon</a>
+          <a class="shopify-btn" href="https://${SHOPIFY_STORE}/search?q=${encodeURIComponent(p.name)}" target="_blank" onclick="event.stopPropagation()">Shopify</a>
         </div>
       </div>
     </div>
@@ -467,6 +484,10 @@ function viewProduct(id) {
     <div style="display:flex;align-items:center;justify-content:space-between">
       <span class="product-price" style="font-size:1.8rem">$${p.price.toFixed(2)}</span>
       <button class="add-btn" style="padding:12px 28px;font-size:1rem" onclick="addToCart(${p.id});closeModal()">Agregar al Carrito</button>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:16px">
+      <a class="amazon-btn" style="padding:12px 24px;font-size:1rem;flex:1;justify-content:center" href="${amazonLink(p)}" target="_blank">Comprar en Amazon</a>
+      <a class="shopify-btn" style="padding:12px 24px;font-size:1rem;flex:1;justify-content:center" href="https://${SHOPIFY_STORE}/search?q=${encodeURIComponent(p.name)}" target="_blank">Ver en Shopify</a>
     </div>
     <p style="margin-top:16px;font-size:.8rem;color:var(--text2)">🚚 Envío gratis en pedidos +$50 · 📦 Entrega 7-15 días · 🔄 30 días devolución</p>
   `;
